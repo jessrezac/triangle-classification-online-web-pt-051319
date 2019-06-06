@@ -17,7 +17,7 @@ class Triangle
     elsif side
     else
       raise TriangleError
-    
+
     end
   end
 
