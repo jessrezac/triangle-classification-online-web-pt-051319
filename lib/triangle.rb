@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
   attr_reader :side_1, :side_2, :side_3
 
@@ -8,9 +10,8 @@ class Triangle
   end
 
   def kind
-    case self
-    when self.side_1 == self.side_2 && self.side_2 == self.side_3
-      return :equilateral
+    if side_1 == side_2 && side_3
+      binding.pry
     end
   end
 
